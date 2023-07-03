@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_transaction_payment_details",
+  "info": {
+    "displayName": "payment_details",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "exchange_rate": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "GBP",
+        "AUD",
+        "CAD"
+      ]
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "payment_processor": {
+      "type": "string"
+    }
+  }
+}

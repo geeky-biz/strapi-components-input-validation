@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_transaction_vendor_details",
+  "info": {
+    "displayName": "Vendor Details"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

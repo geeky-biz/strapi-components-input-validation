@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "transaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "paid",
+        "failed",
+        "declined",
+        "rejected"
+      ]
+    },
+    "payment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "transaction.payment-details"
+    },
+    "vendor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "transaction.vendor-details"
+    }
+  }
+}
